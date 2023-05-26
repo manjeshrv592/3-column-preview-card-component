@@ -1,0 +1,180 @@
+/***********************************/
+/* Custom Properties */
+:root {
+  /* Colors */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --white: #fff;
+  --black: #000;
+
+  --white-transparent: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  /* Fonts */
+  --font-display: 'Big Shoulders Display', cursive;
+  --font-body: 'Lexend Deca', sans-serif;
+}
+
+/***********************************/
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--white-transparent);
+  line-height: 2.5rem;
+  background-color: var(--very-light-gray);
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+/***********************************/
+/* Typography */
+
+/* Headings */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.h1,
+.h2 {
+  font-size: 4rem;
+  line-height: auto;
+  color: var(--very-light-gray);
+}
+
+/***********************************/
+/* Main Layout */
+.container {
+  padding: 8.8rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.section {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  max-width: 92rem;
+  margin: auto;
+}
+
+.card-body {
+  padding: 5rem;
+}
+
+.card-title {
+  margin-bottom: 2.5rem;
+}
+
+.card-text {
+  margin-bottom: 2.5rem;
+}
+
+.card-icon {
+  width: 6.4rem;
+  margin-bottom: 3.5rem;
+}
+
+/* Buttons */
+.btn {
+  border: 2px solid var(--very-light-gray);
+  padding: 1.2rem 3.2rem;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border-radius: 20rem;
+  background-color: var(--very-light-gray);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-orange {
+  color: var(--bright-orange);
+}
+
+.btn-dark-cyan {
+  color: var(--dark-cyan);
+}
+
+.btn-very-dark-cyan {
+  color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: var(--white);
+  color: var(--white);
+}
+
+/***********************************/
+/* Util Classes */
+.bg-orange {
+  background-color: var(--bright-orange);
+}
+
+.bg-dark-cyan {
+  background-color: var(--dark-cyan);
+}
+
+.bg-very-dark-cyan {
+  background-color: var(--very-dark-cyan);
+}
+
+/**************************************/
+/* Responsive styling */
+/**************************************/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .row {
+    display: flex;
+  }
+
+  .card-text {
+    margin-bottom: 8rem;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .section {
+    display: flex;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
