@@ -85,6 +85,7 @@ img {
 }
 
 .card-title {
+  text-transform: uppercase;
   margin-bottom: 2.5rem;
 }
 
@@ -162,6 +163,14 @@ img {
 
   .card-text {
     margin-bottom: 8rem;
+  }
+
+  .card-icon {
+    margin-bottom: 4.5rem;
+  }
+
+  .card-text {
+    margin-bottom: 4.5rem;
   }
 }
 
